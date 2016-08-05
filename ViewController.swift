@@ -30,10 +30,10 @@ class ViewController: UIViewController {
     var countCorrect = 0
     var checkCorrect:Bool = true
     @IBOutlet var countLabel: UILabel!
-    var button1Count = 0
-    var button2Count = 0
-    var button3Count = 0
-    var button4Count = 0
+//    var button1Count = 0
+//    var button2Count = 0
+//    var button3Count = 0
+//    var button4Count = 0
     
     var AnswerNumber = Int()
     
@@ -55,7 +55,8 @@ class ViewController: UIViewController {
                     Question(Question: "While performing conscious choking techniques on an infant, the infant’s head should be lower than _______________ ", Answers: ["the torso", "your arms", "the ground", "the table"], Answer: 0),
                     Question(Question: "What does PPE stand for", Answers:["Personal Performance Evaluation", "Pay Protected Employee", "Pool Patron Education", "Personal Protective Equipment "], Answer: 3),
     //10 questions
-                    Question(Question: "While performing conscious choking techniques on an adult or child, your hands should be _______________ the victim’s navel.", Answers: ["nowhere near ", "2 inches below", "on ", "2 inches above"], Answer: 3), Question(Question: "As the secondary rescuer in any scenario involving an unconscious victim, the first thing you should do upon arriving at the scene is _______________.", Answers: ["check the victims pulse", "Make sure that the primary is ok", "Begin acting as a second person in the appropriate rescue methods", "Make sure EMS has been called and an AED is on its way"], Answer: 3),
+                    Question(Question: "While performing conscious choking techniques on an adult or child, your hands should be _______________ the victim’s navel.", Answers: ["nowhere near ", "2 inches below", "on ", "2 inches above"], Answer: 3),
+                    Question(Question: "As the secondary rescuer in any scenario involving an unconscious victim, the first thing you should do upon arriving at the scene is _______________.", Answers: ["check the victims pulse", "Make sure that the primary is ok", "Begin acting as a second person in the appropriate rescue methods", "Make sure EMS has been called and an AED is on its way"], Answer: 3),
                     Question(Question: "When an AED arrives on the scene, what is the first thing that you should do?", Answers: ["Apply the pads", "Turn it on", "Double check the victims pulse", "Plug the pads into the AED"], Answer: 1), Question(Question: "Using PPE helps to prevent _______________.", Answers: ["Cooties", "Bloodborne Pathogens", "water transfer", "John Tito"], Answer: 1),
                     Question(Question: "What is NOT a sign and symptoms of a victim who may have a head, neck, or spinal injury?", Answers: ["Blooding from the ears and nose", "victom holding there neck", "Victims back feels numb", "Foam at the mouth"],  Answer: 3),
                     Question(Question: "If you are going to leave a victim, you should put them in the modified _______________ position.", Answers:["Laying", "HAINES", "Side", "RICE"], Answer: 1),
@@ -67,7 +68,7 @@ class ViewController: UIViewController {
                     Question(Question: "What is the very FIRST thing a lifeguard should do before entering the water to make a save?", Answers: ["enter the water", "Call out to the victim and tell him that you're coming", "Activate the facility's EAP", "take off your sunglasses"], Answer: 2),
     // 20 Questions
                     Question(Question: "What do we need to obtain from all victims before assisting them?", Answers: ["Money", "Notice", "Knowledge", "Consent"], Answer: 3),
-                    Question(Question: "What is not a proper method to seal a mask?", Answers: ["Head-tilt, Chin lift", "Head-Jaw Thurst with Head extension", "Head-Jaw Thurst without Head extension", "Lip to Jaw"], Answer: 3),
+                    Question(Question: "What is NOT a proper method to seal a mask?", Answers: ["Head-tilt, Chin lift", "Head-Jaw Thurst with Head extension", "Head-Jaw Thurst without Head extension", "Lip to Jaw"], Answer: 3),
                     Question(Question: "What technique should you use to seal a mask if the victim has a spinal injury?", Answers: ["Head-tilt, Chin lift", "Head-Jaw Thurst with Head extension", "Head-Jaw Thurst without Head extension", "You can not help the victim"], Answer: 2),
                     Question(Question: "If a victim has a head neck or spinal injury in the water, and the victim is not breathing, we should immediately _______________.", Answers: ["proceed with a spinal extraction method", "remove the victim", "Give them CPR", "Obtain consent"], Answer: 1),
                     Question(Question: "If you are the only lifeguard on duty, you will be assigned _______________ coverage of the pool.", Answers: ["total", "zone", "backup", "part"], Answer: 0),
@@ -92,7 +93,7 @@ class ViewController: UIViewController {
                     Question(Question: "What does the 'S' in SAMPLE stand for?", Answers: ["Signs and Symptoms", "Standard", "Swimming", "Stroke"], Answer: 0),
                     Question(Question: "What does the 'A' in SAMPLE stand for?", Answers: ["Action", "Activate", "Allergies", "Attention"], Answer: 2),
                     Question(Question: "What does the 'M' in SAMPLE stand for?" , Answers: ["Medication", "Motivation", "Medical records", "Making a save"], Answer: 0),
-                    Question(Question: "What does the 'P' in SAMPLE stand for?", Answers: ["Protect", "Pool Patron safety", "Past Pertinent Medical History", "Rool rules"], Answer: 2),
+                    Question(Question: "What does the 'P' in SAMPLE stand for?", Answers: ["Protect", "Pool Patron safety", "Past Pertinent Medical History", "Pool rules"], Answer: 2),
                     Question(Question: "What does the 'L' in SAMPLE stand for?", Answers: ["Lifeguard", "Laceration", "Lap Swim", "Last oral intake"], Answer: 3),
                     Question(Question: "What does AED stand for?", Answers: ["Acting Emergency Directions", "Advizing Emergency Device", "Automated External Defibrilator", "... "], Answer: 2),
                     Question(Question: "A victim is experiencing difficulty breathing, dizziness, and chest pain. What condition is most likely affecting them?", Answers: ["Heat Stroke", "Heat Exaustion", "Heart Attack", "Allergic Reaction"], Answer: 2),
@@ -104,8 +105,10 @@ class ViewController: UIViewController {
                     Question(Question: "What entry should you use if the victim is in 10ft of water?", Answers: ["Stride Jump", "Compact Jump", "Slide-in", "Dive in"], Answer: 0),
                     Question(Question: "What entry should you use if you suspect that the victim has a spinal injury?", Answers: ["Stride Jump", "Compact Jump", "Slide-in", "Dive in"], Answer: 2),
                     Question(Question: "What would be the most effective way to tell a patron to stop running?", Answers: ["Stop running because you could fall", "Stop Running!!!", "Stop running because you could hurt yourself, instead try to walk", "The pool rules state that you should not run on deck"], Answer: 2),
-                    Question(Question: "You are the lifeguard on duty when you see a young boy running on the deck.You have a duty to act to prevent injuries. What should you do to prevent the child from slipping and falling?", Answers: ["Tell the child to walk on the deck and explain that he could get hurt by slipping and falling", "Allow the child to continue running", "Find the child's mother and have her tell ehr child to stop running", "Notify a headstaff member to tell the child to stop running"], Answer: 0),
+                    Question(Question: "You are the lifeguard on duty when you see a young boy running on the deck.You have a duty to act to prevent injuries. What should you do to prevent the child from slipping and falling?", Answers: ["Tell the child to walk on the deck and explain that he could get hurt by slipping and falling", "Allow the child to continue running", "Find the child's mother and have her tell her child to stop running", "Notify a headstaff member to tell the child to stop running"], Answer: 0),
+                    /////////////////
                     Question(Question: "If you had not tried to stop the child from running and then the child got hurt, what legal principle could be a problem for you?", Answers: ["Good Samaritan Law", "Watch your water", "Duty to Act", "Negligence"], Answer: 3),
+                    /////////////////
                     Question(Question: "A child was running and fell, scrapping his knee. His mother arrives on the scene. What should you do before providing care to the child", Answers: ["Make sure the child is ok", "apply the necessary PPE", "wash your hands", "obtain consent from the mother"], Answer: 3),
                     Question(Question: "After a lightening strike, how long should the pool close for?", Answers: ["10 minutes", "20 minutes", "30 minutes", "40 minutes"], Answer: 2),
                     Question(Question: "What entry should you use if the pool is crowded and swimmers are directly in front of you?", Answers: ["Stride Jump", "Compact Jump", "Slide-in", "Feet first entry"], Answer: 2),
@@ -113,7 +116,7 @@ class ViewController: UIViewController {
                     Question(Question: "What entry should you use if you are in an elevated lifeguard station that is 4 feet above the level of the water and the water is 7-feet deep. ", Answers: ["Stride Jump", "Compact Jump", "Slide-in", "Feet first entry"], Answer: 1),
                     Question(Question: "As a lifeguard, what is your main responsibility?", Answers: ["to enforce your facility’s rules and regulations", "To save anyone that is drownding", "To provide first aid to any pool patrons", "To keep the facility clean"], Answer: 0),
                     Question(Question: "What is the order of the drowding process?", Answers: ["Distressed Swimmer, Active Drowning, Passive Drowning", "Active Drowning, Passive Drowning, Submerged Drowning", "Conscious, Distressed, Passive", "..."], Answer: 0),
-                    Question(Question: "What is a characteristic of a Distressed Swimmer?", Answers: ["The victims arms flailing", "The victim able to call for help", "The victim not moving in the water", "The victim swimming laps"], Answer: 1),
+                    Question(Question: "What is a characteristic of a Distressed Swimmer?", Answers: ["The victims arms flailing", "The victim able to call for help", "The victim's body is limp", "The victim swimming laps"], Answer: 1),
                     Question(Question: "What is a characteristic of a Distressed Swimmer?", Answers: ["The victim is Doggy Paddeling", "The victim can not call for help", "The victim is not breathing", "The victim is Wide eyed"], Answer: 0),
                     Question(Question: "What is not a characteristic of a Distressed Swimmer?", Answers: ["The victim is struggling to stand", "The victim is able to call for help", "The victim is swimming slowly", "The victim's body starts becoming more vertical in the water"], Answer: 2),
                     Question(Question: "What is a characteristic of an Active Drowning Victim?", Answers: ["Victim's body is limp", "Victim is swimming with a weak doggy paddle", "Victims body is vertical in the water", "The victim could ask for help"], Answer: 2),
@@ -121,8 +124,13 @@ class ViewController: UIViewController {
                     Question(Question: "How do you properly scan your water?", Answers: ["Count the number of people in your zone and only pay attention to that number", "Only pay attention to weak swimmers", "...", "Move your heads while effectively scanning the sides, middle, and bottom scanning"], Answer: 3),
                     Question(Question: "What is not a characteristic of Effective Scanning?", Answers: ["Staring at a Weak Swimmer", "Deliberately and actively observe swimmer’s behavior", "Scan the entire volume of water: bottom, middle and surface", "Move your eyes and head while scanning and look directly at the patron’s body movements."], Answer: 0),
     // 70 Questions
-                    Question(Question: "When is emergency Backup Coverage used?", Answers: ["When there is too many people in your zone", "When there is a spinal", "When multiple people are drowning", "When a lifeguard is pulled away from there stand"], Answer: 3),
+            
+                    ////////////////////////////////////////
+                    Question(Question: "When is Emergency Backup Coverage used?", Answers: ["When there is too many people in your zone", "When there is a spinal", "When multiple people are drowning", "When a lifeguard is pulled away from there stand"], Answer: 3),
                                     // It could be used when a lifeguard jumps into the water or pulled away to take care of someone on deck
+                                    // In emergency situations when two or more lifeguards are on duty and one lifeguard must enter the water for a rescue, lifeguards who remain out of the water must now supervise a larger area
+                    ///////////////////////////////////////
+            
                     Question(Question: "What is not a main disease that lifeguards usually do not come in contact with", Answers: ["Tuberculosis", "HIV", "Hepatitis B", "Hepatitis C"], Answer: 0),
                     Question(Question: "What is a primary assessment supposed to identify", Answers: ["a pulse", "Life-Threatening injuries", "If the victim is ok", "Non-Life Threatening injuries"], Answer: 1),
                     Question(Question: "During a Primary Assessment, where do you check for a pulse on an Adult?", Answers: ["Brachial pulse", "On the wrist", "Carotid pulse", "on the chest"], Answer: 2),
@@ -133,25 +141,27 @@ class ViewController: UIViewController {
                     Question(Question: "What situation should you NOT call EMS for?", Answers: ["Bloody nose", "Chest pain", " Persistent abdominal pain", " Victim’s physical condition is unclear"], Answer: 0),
                     Question(Question: "What is the ratio of Breathes to seconds to an Adult while performing rescue breathing ", Answers: ["1 : 5", "1 : 3", "2 : 6", "1 : 6"], Answer: 0),
     // 80 Questions
-                    Question(Question: "When should you call EMS", Answers: ["A boy who is known for having seizures begins seizing", "A boy has a bleeding arm", "A girl is holding her arm", "Altered level of LOC"], Answer: 3),
+                    Question(Question: "When should you call EMS", Answers: ["A boy who is known for having seizures begins seizing", "A boy has a bleeding arm", "A girl is holding her arm", "Altered LOC"], Answer: 3),
                     Question(Question: "What is the most common respiratory  emergency?", Answers: ["Asthma attack", "Airway Obstruction", "Drinking too much pool water", "Throwing up"], Answer: 1),
                     Question(Question: "If someone is clutching thier throat and coughing, what should you do?", Answers: ["Begin performing 5 back blows", "Begin performing 5 abdominal thrusts", "Encourage them to keep coughing", "Look in thier mouth"], Answer: 2),
-                    Question(Question: "What is the universal sign of choking?", Answers: ["Pointing at the nexk", "Clutching the throat", "Coughing", "Hitting the abdominal"], Answer: 1),
+                    Question(Question: "What is the universal sign of choking?", Answers: ["Pointing at the neck", "Clutching the throat", "Coughing", "Hitting the abdominal"], Answer: 1),
                     Question(Question: "Where should back blows be placed?", Answers: ["on the spine", "In between the shoulder blades", "in the middle of the back", "high on the back"], Answer: 1),
                     Question(Question: "If there is a pregnant woman who is conscious and choking what do you do?", Answers: ["only use back blows", "you need to be creative and find a new way to help her", "use back blows and chest thrusts ", "you can not help her"], Answer: 2),
+                    /////////////////////////
                     Question(Question: "What is the Cardiac Chain of Survival used for?", Answers: ["Any emrgencies", "emergencies such as a stroke, heat attack, and others", "severly bleeding victims", "immoble victims"], Answer: 1),
+                    /////////////////////////
                     Question(Question: "What is a Cardiac Arrest", Answers: ["When the heart stops beating or beats too irregularly", "When the heart becomes disconneceted to the rest of the body", "When the heart is beating too fast", "when the blood supply to a specific part of the heart, stops"], Answer: 0),
-                    Question(Question: "What is not a symptom of caridac arrest", Answers: ["Unconsciousness", "Sudden Collapse", "A pulse", "Absence of Breathing"], Answer: 2),
-                    Question(Question: "What is true about the relationship of a cardiac arrest and heart attack", Answers: ["Caridac Arrest can lead to a heart attack", "A cardiac Arrest and Heart attack are the same thing", "Heart Arracks are always worse than a caridac", "Heart Attack leads to a Cardiac Arrest"], Answer: 3),
+                    Question(Question: "What is not a symptom of cardiac arrest", Answers: ["Unconsciousness", "Sudden Collapse", "A pulse", "Absence of Breathing"], Answer: 2),
+                    Question(Question: "What is true about the relationship of a cardiac arrest and heart attack", Answers: ["Cardiac Arrest can lead to a heart attack", "A cardiac Arrest and Heart attack are the same thing", "Heart Arracks are always worse than a cardiac", "Heart Attack leads to a Cardiac Arrest"], Answer: 3),
     // 90 Questions
                     Question(Question: "When do you assume that there is a spinal injury?", Answers: ["always", "in the shallow water", "When you see the victim hit thier head", "in the deep water"], Answer: 2),
-                    Question(Question: "If you're victim has a spinal injury, how do you keep in-line stabilization?", Answers: ["head-chin support", "neck support", "in-line stabilization", "passive roll"], Answer: 0),
+                    Question(Question: "If your victim has a spinal injury, how do you keep in-line stabilization?", Answers: ["head-chin support", "neck support", "in-line stabilization", "passive roll"], Answer: 0),
                     Question(Question: "You are performing a deep-water spinal, the secondary just placed the guard tube under the victim's knees. What is next?", Answers: ["Pull the victim out of the water", "Put the backboard up on the wall", "Check the victims pulse", "Secondary spikes the backboard"], Answer: 3),
                     Question(Question: "What situation is most likely to result in a spinal injury?", Answers: ["A kid diving off of the diving board into 9ft of water", "A mother going down the slide with her daguhter", "kids playing chicken in the shallow end", "A game of Marco Polo"], Answer: 2),
                     Question(Question: "What type of rescue should you perform if you see someone floating face-down in the deep end?", Answers: ["Spinal", "Primary Assessment", "Passive Extraction", "EAP"], Answer: 2),
-                    Question(Question: "When performing a spinal, when do you not need to hold in-line stabilization", Answers: ["You always hold in-line stabilization", "After you place the head supports on", "When you are spiking the backboard", "Once you grab the victim"], Answer: 2),
+                    Question(Question: "When performing a spinal, when do you not need to hold in-line stabilization", Answers: ["You always hold in-line stabilization", "After you place the head supports on", "When you are spiking the backboard", "Once you grab the victim"], Answer: 1),
                     Question(Question: "What is the most important strap when performing a spinal? (assuming you use only 3)", Answers: ["the top strap", "The middle Strap", "The bottom strap", "All of the straps are important"], Answer: 0),
-                    Question(Question: "What should you do if you have a spinal victim that is pregnant?", Answers: ["Put 2 baskboards together", "Only use the top strap", "Walk her out of the pool", "Leave them in the water"], Answer: 1),
+                    Question(Question: "What should you do if you have a spinal victim that is pregnant?", Answers: ["Put 2 backboards together", "Only use the top strap", "Walk her out of the pool", "Leave them in the water"], Answer: 1),
                     Question(Question: "When performing a spinal, what do you do after you finish strapping the victim into the backboard?", Answers: ["Start putting on the head support", "Pull them out of the water", "Fix the tube at the foot of the board", "Switch to head-chin support"], Answer: 0),
                     Question(Question: "If someone who is more qualified, such as a doctor, presents themselves, what should you do?", Answers: ["Have them present proof before you stop", "don't stop because you already took control", "allow them to takeover", "Quiz them"], Answer: 2),
     // 100 Questions
@@ -159,14 +169,30 @@ class ViewController: UIViewController {
                     Question(Question: "A pool patron's tooth gets knocked out, what should you do with the knocked out tooth?", Answers: ["Put the tooth on ice", "Hold onto the tooth", "Place it back inside the patron's mouth", "Place it in milk"], Answer: 3),
                     Question(Question: "What is the least serious type of heat related injury?", Answers: ["Heat Exaustion", "Heat Stroke", "Heat Cramps", "Sun Stroke"], Answer: 2),
                     Question(Question: "What is the minimum amount of people that you need in order to properly perform a in-water spinal (excluding the victim)", Answers: ["1", "2", "3", "4"], Answer: 1),
-                   // Question(Questions: "", Answers: ["", "", "", ""], Answer: 2),
+                    Question(Question: "How deep does the water need to be in order for a pool patron to dive in?", Answers: ["You can't  dive into water", "At least 7ft", "At least 9ft", "At least 12ft"], Answer: 2),
+                    Question(Question: "When are you not protected by the Good Samaritan Laws?", Answers: ["Having a person die while you work", "Acting above your certification", "Doing everything correctly", "Acting while you are working at a facility"], Answer: 1),
+                    Question(Question: "About how long does it take for cardiac arrest to occur after inadequate oxygen gets to the body tissue?", Answers:["over 1 hour", "in as little as 10 mins", "in as little as 3 mins", "in 30 mins"], Answer: 3),
+                    Question(Question: "If you think a pool patron is drowning but are not sure of it, what should you do?", Answers:["Jump in and save them", "Allow them to keep playing", "Wait for something to happen", "Tell your supervisor"], Answer: 0),
+                    Question(Question: "You are working at an outdoor pool when it starts to rain very heavily. When should you remove pool patrons from the water?", Answers: ["Immediately", "If it keeps raining", "If you can't see the bottom of the water", "When people start to ask you"], Answer: 2),
+                    Question(Question: "What is the RID factor?", Answers: ["The Causes of an active victom drowning while lifeguards are on duty", "The Acronym for a victim ingesting something that could be poisionous", "The Acyonym for responding to a spinal victim", "How to treat a Bee Sting"], Answer: 0),
+    //  110 Questions
+                    Question(Question: "What does the Acyonym RID stand for?", Answers: ["Rest, Immobolize, Drain", "Remove, Injury, Danger", "Recognition, Intrusion, Distraction", "Rest, Immobolize, Drink"], Answer: 1),
+                    Question(Question: "While rotating what needs to be maintained throughout the entire rotation?", Answers: ["A guard tube", "Communication", "Time", "Patron Surveillance"], Answer: 3),
+                            // The exchange of information should be brief, and patron surveillance must be maintained throughout the entire rotation.
+                    Question(Question: "After an emergency has been resolved, what should you and other members of the safety team do?", Answers: ["Remove everyone from the water", "Inform, Prevent, Save", "RID factor", "Report, Advise, Release"], Answer: 3),
+                    Question(Question: "Since no aquatic emergencies are exactly alike, you must Train to the _________, and meet the ________", Answers: ["Objective, Standard", "Situation,  Requirements", "Requirements, Situation", "Standard, Objective"], Answer: 3),
+                    Question(Question: "How should you enter the pool if you are entering from a gradual slope-zero-depth area?", Answers: ["Run-and-Swim Entry", "Stride jump", "Compact Jump", "Slide-in"], Answer: 0),
+                    Question(Question: "Where can Pathogens as in 'Bloodborne Pathogens' be found?", Answers: ["Only in a pool", "Anywhere", "On the pool deck", "In the first aid room"], Answer: 1),
+                    Question(Question: "How long should you wash your hands for (According to American Red Cross)?", Answers: ["At least 5 seconds", "At least 10 seconds", "At least 15 seconds", "at least 20 seconds"], Answer: 3),
+                    Question(Question: "What is the goal of Sizing up the Scene?", Answers: ["To determine life threatening injuries", "To determine non-lifeThreatening injuries", "To determine if the scene is safe to responders", "To determine the LOC"], Answer: 2),
+                    // When you size-up the scene, your goal is to determine if the scene is safe for you, other lifeguards, EMS personnel, the victim(s) and any bystanders. pg 141
+                   // Question(Question: "According to the handbook", Answers: <#T##[String]!#>, Answer: <#T##Int!#>)
+                    
+            
+                   
                     
                     
         ]
-        //Button 0 = 21
-        //Button 1 = 20
-        //Button 2 = 20
-        //Button 3 = 22
         
       
         // ... stands for will implement
@@ -183,25 +209,20 @@ class ViewController: UIViewController {
     
     func PickQuestion(){
         
-        
-        
         if Questions.count > 0{
             
-            QNumber = random() % Questions.count
+            QNumber = Int(arc4random_uniform(UInt32(Questions.count)))
             
             QLabel.text = Questions[QNumber].Question
             
             AnswerNumber = Questions[QNumber].Answer
             
-            
-            for i in 0..<Buttons.count{
+            for i in 0..<Buttons.count {
                 Buttons[i].setTitle(Questions[QNumber].Answers[i], forState: UIControlState.Normal)
-                
-                
             }
             
             // this method will have it stop when there fis no more questions to ask.
-              Questions.removeAtIndex(QNumber)
+            Questions.removeAtIndex(QNumber)
             
             let half:Double?
             checkCorrect = true;
@@ -222,102 +243,76 @@ class ViewController: UIViewController {
             
         }
         else {
-            
-            
             NSLog("Done!")
-         
-            
+
         }
         
     }
-    
-    
     @IBAction func Btn1(sender: AnyObject) {
         if AnswerNumber == 0{
             
             Buttons[0].backgroundColor = UIColor.redColor()
             if (checkCorrect == true){
                 countCorrect = countCorrect + 1
-      
             }
             PickQuestion()
-            
         }
         else {
-           
             NSLog("Wrong")
             // where you say the question is wrong
             // have a button that says explanation that pops up
             // have some type of Modal Feedback that shows them that they got it wrong
             Buttons[AnswerNumber].backgroundColor = UIColor.blueColor()
             checkCorrect = false
-            
         }
         NSLog(String(checkCorrect))
-        button1Count = button1Count + 1
-        NSLog("Button 0 = " + String(button1Count))
-        
+//        button1Count = button1Count + 1
+//        NSLog("Button 0 = " + String(button1Count))
     }
-    
     
     @IBAction func Btn2(sender: AnyObject) {
         if AnswerNumber == 1{
-         
             Buttons[1].backgroundColor = UIColor.redColor()
             if (checkCorrect == true){
                 countCorrect = countCorrect + 1
-         
-                
             }
-            
             PickQuestion()
         }
         else {
-            
             Buttons[AnswerNumber].backgroundColor = UIColor.blueColor()
             NSLog("Wrong") // where you say the question is wrong
             checkCorrect = false
         }
          NSLog(String(checkCorrect))
-        button2Count = button2Count + 1
-        NSLog("Button 2 = " + String(button2Count))
+//        button2Count = button2Count + 1
+//        NSLog("Button 2 = " + String(button2Count))
     }
     
     @IBAction func Btn3(sender: AnyObject) {
         if AnswerNumber == 2{
-            
             Buttons[2].backgroundColor = UIColor.redColor()
             if (checkCorrect == true){
                 countCorrect = countCorrect + 1
-    
             }
-            
             PickQuestion()
-            
         }
-            
         else {
-            
             Buttons[AnswerNumber].backgroundColor = UIColor.blueColor()
             NSLog("Wrong") // where you say the question is wrong
             checkCorrect = false
         }
          NSLog(String(checkCorrect))
-        button3Count = button3Count + 1
-        NSLog("Button 3 = " + String(button3Count))
+//        button3Count = button3Count + 1
+//        NSLog("Button 3 = " + String(button3Count))
     }
     
     @IBAction func Btn4(sender: AnyObject) {
         if AnswerNumber == 3{
-            
             Buttons[3].backgroundColor = UIColor.redColor()
             if (checkCorrect == true){
                 countCorrect = countCorrect + 1
-
             }
-            
             PickQuestion()
-            
         }
         else {
             Buttons[AnswerNumber].backgroundColor = UIColor.blueColor()
@@ -325,11 +320,8 @@ class ViewController: UIViewController {
            // checkCorrect = false
         }
         NSLog(String(checkCorrect))
-        button4Count = button4Count + 1
-        NSLog("Button 4 = " + String(button4Count))
+//        button4Count = button4Count + 1
+//        NSLog("Button 4 = " + String(button4Count))
     }
-
-  
-
 }
 
