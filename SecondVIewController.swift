@@ -9,6 +9,9 @@
 import UIKit
 
 class SecondVIewController: UIViewController {
+    
+    var docController:UIDocumentInteractionController!
+
  
     @IBAction func suggestion(sender: AnyObject) {
         if let url = NSURL(string: "http://www.MitchellKlich.com/Form.html"){
@@ -21,9 +24,13 @@ class SecondVIewController: UIViewController {
         if let url = NSURL(string: "http://www.MitchellKlich.com/"){
                   UIApplication.sharedApplication().openURL(url)
         }
-
     }
     
+    @IBAction func book(sender: AnyObject) {
+        if let url = NSURL(string: "http://www.instructorscorner.org/media/resources/LGcandidates/LG_PM.pdf"){
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
  
     
     override func viewDidLoad() {

@@ -52,6 +52,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="570" width="52" height="21"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2a-zb-mh7">
                                 <rect key="frame" x="20" y="82" width="359" height="146"/>
@@ -64,6 +67,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="570" width="82" height="21"/>
+                                </variation>
                             </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eT1-q3-3sh">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -94,12 +100,32 @@
                                     <action selector="Btn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2H-Tf-g02"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyW-v7-KjR">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="282" y="570" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GyW-v7-KjR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GyW-v7-KjR"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="QLabel" destination="j2a-zb-mh7" id="tY5-ct-mDf"/>
                         <outlet property="countLabel" destination="l6M-CI-0Ci" id="CUy-JY-6BO"/>
+                        <outlet property="ratio" destination="GyW-v7-KjR" id="sxz-u1-BX8"/>
                         <outletCollection property="Buttons" destination="iNz-tR-Bjh" collectionClass="NSMutableArray" id="gaG-GK-YT3"/>
                         <outletCollection property="Buttons" destination="bjA-Bh-5GF" collectionClass="NSMutableArray" id="bRx-4v-mTY"/>
                         <outletCollection property="Buttons" destination="lIM-9G-Yeb" collectionClass="NSMutableArray" id="wEi-oM-E1b"/>
@@ -138,35 +164,18 @@
                             </button>
                             <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="american-national-red-cross_416x416.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="21R-RN-gfg">
                                 <rect key="frame" x="86" y="309" width="227" height="176"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sk9-Jy-TBH">
-                                <rect key="frame" x="136" y="249" width="127" height="30"/>
-                                <state key="normal" title="Lifeguarding Class"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="136" y="202" width="127" height="30"/>
+                                    <rect key="frame" x="86" y="391" width="227" height="176"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="5hf-Iu-Ycn" kind="show" id="gfV-vJ-8JK"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KL-QW-VEy">
                                 <rect key="frame" x="178" y="198" width="42" height="30"/>
                                 <state key="normal" title="About"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="178" y="253" width="42" height="30"/>
+                                    <rect key="frame" x="178" y="295" width="42" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="about:" destination="Lmq-u8-yIv" eventType="touchUpInside" id="taf-Fa-BHL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBl-Of-YYm">
-                                <rect key="frame" x="178" y="198" width="42" height="30"/>
-                                <state key="normal" title="About"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="178" y="253" width="42" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="GDr-Mv-z1s" kind="show" id="hse-E8-5ze"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-qb-KWA">
@@ -178,23 +187,43 @@
                                     <rect key="frame" x="0.0" y="28" width="399" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sk9-Jy-TBH">
+                                <rect key="frame" x="136" y="249" width="127" height="30"/>
+                                <state key="normal" title="Lifeguarding Class"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="136" y="239" width="127" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="5hf-Iu-Ycn" kind="show" id="gfV-vJ-8JK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-Rr-jeT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Book"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="196" width="35" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="book:" destination="Lmq-u8-yIv" eventType="touchUpInside" id="fUv-O3-gww"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="VBl-Of-YYm"/>
+                                <exclude reference="LS6-Rr-jeT"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="VBl-Of-YYm"/>
+                                <include reference="LS6-Rr-jeT"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prt-qP-v2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-606" y="193.5"/>
+            <point key="canvasLocation" x="-606" y="226.5"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="3oJ-hw-FoQ">
@@ -251,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDI-bQ-UVk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-606" y="1018.5"/>
+            <point key="canvasLocation" x="-1260" y="1161"/>
         </scene>
         <!--FourthV Iew Controller-->
         <scene sceneID="bh9-K0-FVQ">
@@ -299,13 +328,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6q-Wy-qoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1986" y="322.5"/>
+            <point key="canvasLocation" x="-1626" y="306"/>
         </scene>
     </scenes>
     <resources>
         <image name="american-national-red-cross_416x416.jpg" width="416" height="416"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VBu-9I-cGm"/>
+        <segue reference="Sd8-Ta-yho"/>
     </inferredMetricsTieBreakers>
 </document>
