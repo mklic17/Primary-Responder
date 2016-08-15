@@ -318,12 +318,31 @@
                                     <rect key="frame" x="30" y="97" width="340" height="21"/>
                                 </variation>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sey-o5-zZA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="161" width="360" height="580"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="5hf-Iu-Ycn" id="cao-JX-dvo"/>
+                                    <outlet property="delegate" destination="5hf-Iu-Ycn" id="g4R-m7-lCi"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="sey-o5-zZA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="sey-o5-zZA"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="fpu-7p-Zxx"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6q-Wy-qoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
